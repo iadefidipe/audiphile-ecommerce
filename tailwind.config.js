@@ -2,6 +2,13 @@ module.exports = {
   content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        mobile: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1536px',
+      },
       colors: {
         "pry": "#D87D4A",
         "bg-black": "#101010",
@@ -21,7 +28,8 @@ module.exports = {
         h4: '1.75rem',
         h5: '1.5rem',
         h6: '1.125rem',
-        body:'0.9375rem'
+        body:'0.9375rem',
+        nav:'0.8125rem'
       }
     },
   },
