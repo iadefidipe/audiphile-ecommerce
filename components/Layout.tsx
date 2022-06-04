@@ -1,3 +1,4 @@
+import Footer from "./footer"
 import Header from "./Header"
 
 interface LayoutInterface {
@@ -9,6 +10,7 @@ function Layout({ children }: LayoutInterface) {
     <div className="font-manrope" >
       <Header />
       {children}
+      <Footer />
     </div>
   )
 }

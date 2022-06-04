@@ -8,7 +8,7 @@ import Logo from "./shared/Logo"
 
 function Header() {
   return (
-    <header className='bg-black p-8 '>
+    <header className='bg-black py-8 px-2 '>
       <Wrapper >
         <nav className=" nav ">
           <div className=" md:hidden" >

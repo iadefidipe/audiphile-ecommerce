@@ -8,3 +8,12 @@
 .nav{
     @apply relative flex items-center justify-between gap-7 after:content-[''] after:absolute after:left-0 after:right-0 after:bg-[#979797] after:h-px after:mt-[60px]
 }
+
+.footer-false{
+    @apply hidden md:flex flex-row text-white text-nav  gap-7 font-bold
+}
+
+
+.footer-true{
+    @apply flex flex-col items-center md:flex-row text-white text-nav  gap-7 font-bold
+}
