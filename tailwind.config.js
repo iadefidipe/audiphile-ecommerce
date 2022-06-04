@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        mobile: "640px",
+        sm: "640px",
         md: "768px",
         lg: "1024px",
         xl: "1280px",
@@ -41,8 +41,8 @@ module.exports = {
         bold: 700,
       },
       margin: {
-        '5px': '5px',
-      }
+        "5px": "5px",
+      },
     },
   },
   plugins: [],
