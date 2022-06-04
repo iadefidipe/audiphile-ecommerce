@@ -14,9 +14,9 @@ module.exports = {
       },
       colors: {
         pry: "#D87D4A",
-        "bg-black": "#101010",
+        bgBlack: "#101010",
         gray: "#F1F1F1",
-        "bg-white": "#FAFAFA",
+        offWhite: "#FAFAFA",
         white: "#FFFFFF",
         black: "#000000",
         accent: "#fbaf85",
