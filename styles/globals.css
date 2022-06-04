@@ -15,5 +15,11 @@
 
 
 .footer-true{
-    @apply flex flex-col items-center md:flex-row text-white text-nav  gap-7 font-bold
+    @apply flex flex-col items-center col-span-2 md:flex-row text-white text-nav  gap-7 font-bold
+}
+
+
+/* white body text 50% opacity */
+.text-50{
+    @apply text-white opacity-50 text-body 
 }
