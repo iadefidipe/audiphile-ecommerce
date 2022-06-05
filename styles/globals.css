@@ -1,25 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* using tailwind @apply to apply the tailwind classes to the body */
-.nav{
-    @apply relative flex items-center justify-between gap-7 after:content-[''] after:absolute after:left-0 after:right-0 after:bg-[#979797] after:h-px after:mt-[60px]
+.nav {
+  @apply mx-pad relative flex items-center justify-between gap-7 after:content-[''] after:absolute after:left-0 after:right-0 after:bg-[#979797] after:h-px after:mt-[60px];
 }
 
-.footer-false{
-    @apply hidden md:flex flex-row text-white text-nav  gap-7 font-bold
+/* menu links style in header */
+.footer-false {
+  @apply hidden md:flex flex-row text-white text-nav  gap-7 font-bold;
 }
 
-
-.footer-true{
-    @apply flex flex-col items-center col-span-2 md:flex-row text-white text-nav  gap-7 font-bold
+/* menu links style in footer */
+.footer-true {
+  @apply flex flex-col items-center col-span-2 md:flex-row md:col-span-1 md:justify-self-start text-white text-nav  gap-7 font-bold   lg:col-start-2 col-end-3  lg:justify-self-end;
 }
-
 
 /* white body text 50% opacity */
-.text-50{
-    @apply text-white opacity-50 text-body 
+.text-50 {
+  @apply text-white opacity-50 text-body leading-text;
+}
+
+/* footer container div styling */
+.footer__container {
+  @apply mx-pad py-12 flex flex-col items-center gap-12 md:grid  grid-cols-2 gap-y-8  gap-x-0;
 }

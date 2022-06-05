@@ -43,6 +43,12 @@ module.exports = {
       margin: {
         "5px": "5px",
       },
+      spacing: {
+        pad: "39px",
+      },
+      lineHeight: {
+        text: "25px",
+      },
     },
   },
   plugins: [],
