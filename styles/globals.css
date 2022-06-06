@@ -20,11 +20,25 @@
 }
 
 /* white body text 50% opacity */
-.text-50 {
+.body-text-white {
   @apply text-white opacity-50 text-body leading-text;
 }
+/* white body text 50% opacity */
+.body-text-black {
+  @apply text-black opacity-50 text-body leading-text text-center lg:text-left;
+}
+
 
 /* footer container div styling */
 .footer__container {
   @apply mx-pad py-12 flex flex-col items-center gap-12 md:grid  grid-cols-2 gap-y-8  gap-x-0;
+}
+
+/* typography */
+.h2 {
+  @apply text-h2-sm text-center font-bold uppercase leading-h2 tracking-h2  sm:text-h2 lg:text-left;
+}
+
+.cta-image-wrap > span{
+    @apply rounded-[8px]
 }

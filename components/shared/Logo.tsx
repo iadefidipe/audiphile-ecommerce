@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import audiophile from "public/assets/audiophile-logo.svg"
+import audiophile from "public/assets/shared/desktop/logo.svg"
 
 interface LogoInterface{
   footer?: boolean

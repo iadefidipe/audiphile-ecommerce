@@ -27,6 +27,7 @@ module.exports = {
       fontSize: {
         h1: "3.5rem",
         h2: "2.5rem",
+        "h2-sm": "1.75rem",
         h3: "2rem",
         h4: "1.75rem",
         h5: "1.5rem",
@@ -48,6 +49,10 @@ module.exports = {
       },
       lineHeight: {
         text: "25px",
+        h2: "44px",
+      },
+      letterSpacing: {
+        h2: "1.43px",
       },
     },
   },
