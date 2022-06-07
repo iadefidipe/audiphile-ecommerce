@@ -5,6 +5,7 @@ import tabletImage from "public/assets/shared/tablet/image-best-gear.jpg"
 import mobileImage from "public/assets/shared/mobile/image-best-gear.jpg"
 import useWindow from "hook/useWindow"
 import Image from "next/image"
+import Button from "components/shared/Button"
 
 function BannerImage() {
   const { size } = useWindow()
@@ -48,6 +49,7 @@ function Banner() {
               people who make Audiophile the best place to buy your portable
               audio equipment.
             </p>
+            <Button />
           </div>
           <MemoImage />
         </div>

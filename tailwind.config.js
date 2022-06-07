@@ -46,6 +46,8 @@ module.exports = {
       },
       spacing: {
         pad: "39px",
+        by:"15px",
+        bx:`30px`
       },
       lineHeight: {
         text: "25px",
