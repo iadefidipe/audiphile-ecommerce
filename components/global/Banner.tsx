@@ -9,30 +9,27 @@ import Image from "next/image"
 function BannerImage() {
   const { size } = useWindow()
 
-  const renderImage = (size:number) => {
+  const renderImage = (size: number) => {
     if (size > 1024) {
       return desktopImage
-      console.log("desktop")
     } else if (size > 640 && size <= 1024) {
       return tabletImage
-      console.log("tablet")
     } else {
       return mobileImage
-      console.log("mobile")
     }
   }
 
   return (
-    <div className='cta-image-wrap rounded-lg'>
+    <div className='cta-image-wrap  flex-1 rounded-lg'>
       <Image src={renderImage(size)} alt='' />
     </div>
   )
 }
 
+//memoizing image rendered to avoid banner component rendering
 const MemoImage = memo(BannerImage)
 
-function Cta() {
- 
+function Banner() {
   return (
     <section className='my-10'>
       <Wrapper>
@@ -59,4 +56,4 @@ function Cta() {
   )
 }
 
-export default Cta
+export default Banner
