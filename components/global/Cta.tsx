@@ -1,30 +1,59 @@
 import { Wrapper } from "components/shared"
-import React, { useEffect } from "react"
+import React, { useEffect, useState, useCallback, memo } from "react"
 import desktopImage from "public/assets/shared/desktop/image-best-gear.jpg"
 import tabletImage from "public/assets/shared/tablet/image-best-gear.jpg"
 import mobileImage from "public/assets/shared/mobile/image-best-gear.jpg"
 import useWindow from "hook/useWindow"
 import Image from "next/image"
 
-function Cta() {
+function BannerImage() {
   const { size } = useWindow()
+  const [image, setImage] = useState(desktopImage)
+  console.log(image)
+  // //memoise the function
+  const renderImage = useCallback(() => {
+    if (size <= 640) {
+      return mobileImage
+    } else if (size > 640 && size < 1024) {
+      return tabletImage
+    } else  {
+      return desktopImage
+    }
+  }, [size])
 
-  const renderImage = ()  =>{
-    if (size <=640){
-      return  mobileImage
-    } 
-    else if (size>640 && size<1024){
-      return  tabletImage
-    } 
-    else {
-      return  desktopImage
-    } 
-  }
+  useEffect(() => {
+    setImage(renderImage())
+  }, [renderImage])
+
   return (
-    <section className="my-10">
+    <div className='cta-image-wrap rounded-lg'>
+      <Image src={image} alt='' />
+    </div>
+  )
+}
+
+const MemoImage = memo(BannerImage)
+
+function Cta() {
+  // const handleImage = useCallback(() => {
+  //   setImage(renderImage())
+  // }, [renderImage])
+  // console.log("rerednered")
+  // const handleImage = () => {
+  //   if (size <= 640) {
+  //     return(mobileImage)
+  //   } else if (size > 640 && size < 1024) {
+  //     return(tabletImage)
+  //   } else {
+  //     return(desktopImage)
+  //   }
+  // }
+  console.log("rerednered")
+  return (
+    <section className='my-10'>
       <Wrapper>
         <div className='mx-pad flex flex-col-reverse gap-[63px] lg:flex-row items-center  '>
-          <div className="flex-1" >
+          <div className='flex-1'>
             <h2 className='h2'>
               Bringing you the <span className='text-accent'>best</span> audio
               gear
@@ -39,9 +68,7 @@ function Cta() {
               audio equipment.
             </p>
           </div>
-          <div className="cta-image-wrap rounded-lg" >
-            <Image src={renderImage()} alt='' />
-          </div>
+          <MemoImage />
         </div>
       </Wrapper>
     </section>
