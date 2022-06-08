@@ -1,10 +1,11 @@
 import arrow from "public/assets/shared/desktop/icon-arrow-right.svg"
 import Image from "next/image"
 
+
 interface BtnInterface {
   num: number
 }
-export function BtnPry({num}: BtnInterface) {
+export function BtnPry({ num }: BtnInterface) {
   return <button className={`btn-${num}`}>SEE PRODUCT</button>
 }
 
