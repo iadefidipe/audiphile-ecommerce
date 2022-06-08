@@ -45,7 +45,7 @@ module.exports = {
         "5px": "5px",
       },
       spacing: {
-        pad: "39px",
+        pad: "24px",
         by:"15px",
         bx:`30px`
       },
@@ -55,6 +55,9 @@ module.exports = {
       },
       letterSpacing: {
         h2: "1.43px",
+      },
+      borderRadius:{
+        pry: "8px",
       },
     },
   },
