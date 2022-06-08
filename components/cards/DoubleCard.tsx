@@ -4,7 +4,7 @@ import desktopImage from "public/assets/home/desktop/image-earphones-yx1.jpg"
 import tabletImage from "public/assets/home/tablet/image-earphones-yx1.jpg"
 import mobileImage from "public/assets/home/mobile/image-earphones-yx1.jpg"
 import useWindow from "hook/useWindow"
-import { BtnPry } from "components/shared/Button"
+import { BtnOne } from "components/shared/Button"
 import { Wrapper } from "components/shared"
 
 function ImageContainer() {
@@ -21,7 +21,7 @@ function ImageContainer() {
   }
 
   return (
-    <div className='cta-image-wrap  flex-1 rounded-lg'>
+    <div className='cta-image-wrap h-[200px] sm:h-auto flex-1 '>
       <Image src={renderImage(size)} alt='' />
     </div>
   )
@@ -32,16 +32,17 @@ const MemoImage = memo(ImageContainer)
 
 function DoubleCard() {
   return (
-    <Wrapper>
-      <div>
-      <MemoImage />
-      <div>
-        <h4>YX1 EARPHONES</h4>
-        <BtnPry num={1} />
-      </div>
-    </div>
-    </Wrapper>
-    
+    <section className='my-10'>
+      <Wrapper>
+        <div className='double-card'>
+          <MemoImage />
+          <div className=' smcard-btn '>
+            <h4 className=' text-h4 font-bold  '>YX1 EARPHONES</h4>
+            <BtnOne />
+          </div>
+        </div>
+      </Wrapper>
+    </section>
   )
 }
 
