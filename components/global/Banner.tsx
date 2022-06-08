@@ -1,33 +1,7 @@
-import { Wrapper } from "components/shared"
-import React, { useEffect, useState, useCallback, memo } from "react"
+import { ImageContainer, Wrapper } from "components/shared"
 import desktopImage from "public/assets/shared/desktop/image-best-gear.jpg"
 import tabletImage from "public/assets/shared/tablet/image-best-gear.jpg"
 import mobileImage from "public/assets/shared/mobile/image-best-gear.jpg"
-import useWindow from "hook/useWindow"
-import Image from "next/image"
-
-function BannerImage() {
-  const { size } = useWindow()
-
-  const renderImage = (size: number|undefined) => {
-    if (size && size > 1024) {
-      return desktopImage
-    } else if (size && (size > 640 && size <= 1024)) {
-      return tabletImage
-    } else {
-      return mobileImage
-    }
-  }
-
-  return (
-    <div className='cta-image-wrap  flex-1 rounded-lg'>
-      <Image src={renderImage(size)} alt='' />
-    </div>
-  )
-}
-
-//memoizing image rendered to avoid banner component rendering
-const MemoImage = memo(BannerImage)
 
 function Banner() {
   return (
@@ -49,7 +23,11 @@ function Banner() {
               audio equipment.
             </p>
           </div>
-          <MemoImage />
+          <ImageContainer
+            desktopImage={desktopImage}
+            tabletImage={tabletImage}
+            mobileImage={mobileImage}
+          />
         </div>
       </Wrapper>
     </section>
