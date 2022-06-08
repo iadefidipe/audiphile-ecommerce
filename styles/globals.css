@@ -5,16 +5,20 @@
 @tailwind utilities;
 
 @layer components{
-  .btn-1{
+  .btnOne{
     @apply border-[1px] text-black text-nav border-black px-bx py-by font-bold hover:bg-black hover:text-white
   }
 
-  .btn-2{
+  .btnTwo{
     @apply  text-white bg-pry text-nav  px-bx py-by font-bold  hover:bg-accent
   }
 
   .btn-shop{
     @apply  text-black opacity-50 text-nav  font-bold  hover:text-pry
+  }
+
+  .smcard-btn{
+    @apply  bg-gray flex-1 py-[42px] pl-[24px] flex flex-col items-start justify-center gap-8 rounded-pry md:py-[0] md:pl-[41px] 
   }
 }
 
@@ -54,9 +58,17 @@
 }
 
 .cta-image-wrap > span{
-    @apply rounded-[8px]
+    @apply rounded-pry
 }
 
+/* shop button arrow img margin */
 .btn-shop > span{
     @apply ml-[13.2px]
 }
+
+/* double card section */
+.double-card{
+  @apply flex flex-col mx-pad gap-6 sm:flex-row md:gap-[11px] lg:gap-[30px]
+}
+
+
