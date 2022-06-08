@@ -4,6 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+  .btn-1{
+    @apply border-[1px] text-black text-nav border-black px-bx py-by font-bold hover:bg-black hover:text-white
+  }
+
+  .btn-2{
+    @apply  text-white bg-pry text-nav  px-bx py-by font-bold  hover:bg-accent
+  }
+
+  .btn-shop{
+    @apply  text-black opacity-50 text-nav  font-bold  hover:text-pry
+  }
+}
+
 /* using tailwind @apply to apply the tailwind classes to the body */
 .nav {
   @apply mx-pad relative flex items-center justify-between gap-7 after:content-[''] after:absolute after:left-0 after:right-0 after:bg-[#979797] after:h-px after:mt-[60px];
@@ -41,4 +55,8 @@
 
 .cta-image-wrap > span{
     @apply rounded-[8px]
+}
+
+.btn-shop > span{
+    @apply ml-[13.2px]
 }
