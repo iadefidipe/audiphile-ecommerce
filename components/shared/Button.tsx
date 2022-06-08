@@ -3,10 +3,13 @@ import Image from "next/image"
 
 
 interface BtnInterface {
-  num: number
+  num: string
 }
-export function BtnPry({ num }: BtnInterface) {
-  return <button className={`btn-${num}`}>SEE PRODUCT</button>
+export function BtnOne() {
+  return <button className={`btnOne`}>SEE PRODUCT</button>
+}
+export function BtnTwo() {
+  return <button className={`btnTwo`}>SEE PRODUCT</button>
 }
 
 export function BtnShop() {

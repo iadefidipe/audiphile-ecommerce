@@ -1,22 +1,23 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react"
 
 const useWindow = () => {
   //TODO: Manage screen-size state
-  const [size, setSize] = useState<number>();
+  
+  const [size, setSize] = useState<number|undefined>()
 
   //TODO: Monitor the screen size to enable image responsiveness
   useEffect(() => {
     window.addEventListener("resize", (e) => {
-      setSize(window.innerWidth);
-    });
+      setSize(window.innerWidth)
+    })
     return () => {
       window.removeEventListener("resize", (e) => {
-        setSize(window.innerWidth);
-      });
-    };
-  });
+        setSize(window.innerWidth)
+      })
+    }
+  })
 
-  return {size};
-};
+  return { size }
+}
 
-export default useWindow;
+export default useWindow

@@ -9,10 +9,10 @@ import Image from "next/image"
 function BannerImage() {
   const { size } = useWindow()
 
-  const renderImage = (size: number) => {
-    if (size > 1024) {
+  const renderImage = (size: number|undefined) => {
+    if (size && size > 1024) {
       return desktopImage
-    } else if (size > 640 && size <= 1024) {
+    } else if (size && (size > 640 && size <= 1024)) {
       return tabletImage
     } else {
       return mobileImage
