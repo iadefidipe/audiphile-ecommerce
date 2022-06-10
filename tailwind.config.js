@@ -46,8 +46,8 @@ module.exports = {
       },
       spacing: {
         pad: "24px",
-        by:"15px",
-        bx:`30px`
+        by: "15px",
+        bx: `30px`,
       },
       lineHeight: {
         text: "25px",
@@ -55,10 +55,23 @@ module.exports = {
       },
       letterSpacing: {
         h2: "1.43px",
+        h4: "2px",
       },
-      borderRadius:{
+      borderRadius: {
         pry: "8px",
       },
+      backgroundImage: {
+        "wide-card-sm":
+          "url('/assets/home/mobile/image-speaker-zx7.jpg')",
+        "wide-card-md":
+          "url('/assets/home/tablet/image-speaker-zx7.jpg')",
+        "wide-card-lg":
+          "url('/assets/home/desktop/image-speaker-zx7.jpg')",
+          "card-pattern-circle":"url('/assets/home/desktop/pattern-circles.svg')",
+      },
+      backgroundPosition:{
+        "desk-pattern":" -150px 170px"
+      }
     },
   },
   plugins: [],
