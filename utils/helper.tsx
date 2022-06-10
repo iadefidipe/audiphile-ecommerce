@@ -2,7 +2,7 @@
 
 interface HandleImageInterface {
     size: number|undefined
-    dektyop
+
 }
 
 const renderImage = (size: number|undefined):unknown => {
