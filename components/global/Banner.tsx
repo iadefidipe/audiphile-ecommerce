@@ -5,9 +5,9 @@ import mobileImage from "public/assets/shared/mobile/image-best-gear.jpg"
 
 function Banner() {
   return (
-    <section className='my-10'>
+    <section className='my-10 mx-pad'>
       <Wrapper>
-        <div className='mx-pad flex flex-col-reverse gap-[63px] lg:flex-row items-center  '>
+        <div className=' flex flex-col-reverse gap-[63px] lg:flex-row items-center  '>
           <div className='flex-1'>
             <h2 className='h2'>
               Bringing you the <span className='text-accent'>best</span> audio
