@@ -4,21 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-  .btnOne{
-    @apply border-[1px] text-black text-nav border-black px-bx py-by font-bold hover:bg-black hover:text-white
+@layer components {
+  .btnOne {
+    @apply border-[1px] text-black text-nav border-black px-bx py-by font-bold hover:bg-black hover:text-white;
   }
 
-  .btnTwo{
-    @apply  text-white bg-pry text-nav  px-bx py-by font-bold  hover:bg-accent
+  .btnTwo {
+    @apply text-white bg-pry text-nav  px-bx py-by font-bold  hover:bg-accent;
   }
 
-  .btn-shop{
-    @apply  text-black opacity-50 text-nav  font-bold  hover:text-pry
+  .btnThree {
+    @apply text-white bg-black text-nav  px-bx py-by font-bold  hover:bg-transparent border-black border-[1px] hover:text-black;
   }
 
-  .smcard-btn{
-    @apply  bg-gray flex-1 py-[42px] pl-[24px] flex flex-col items-start justify-center gap-8 rounded-pry md:py-[0] md:pl-[41px] 
+  .btn-shop {
+    @apply text-black opacity-50 text-nav  font-bold  hover:text-pry;
+  }
+
+  .smcard-btn {
+    @apply bg-gray flex-1 py-[42px] pl-[24px] flex flex-col items-start justify-center gap-8 rounded-pry md:py-[0] md:pl-[41px] lg:pl-[95px];
   }
 }
 
@@ -46,10 +50,9 @@
   @apply text-black opacity-50 text-body leading-text text-center lg:text-left;
 }
 
-
 /* footer container div styling */
 .footer__container {
-  @apply mx-pad py-12 flex flex-col items-center gap-12 md:grid  grid-cols-2 gap-y-8  gap-x-0;
+  @apply  py-12 flex flex-col items-center gap-12 md:grid  grid-cols-2 gap-y-8  gap-x-0;
 }
 
 /* typography */
@@ -57,18 +60,16 @@
   @apply text-h2-sm text-center font-bold uppercase leading-h2 tracking-h2  sm:text-h2 lg:text-left;
 }
 
-.cta-image-wrap > span{
-    @apply rounded-pry
+.cta-image-wrap > span {
+  @apply rounded-pry;
 }
 
 /* shop button arrow img margin */
-.btn-shop > span{
-    @apply ml-[13.2px]
+.btn-shop > span {
+  @apply ml-[13.2px];
 }
 
 /* double card section */
-.double-card{
-  @apply flex flex-col mx-pad gap-6 sm:flex-row md:gap-[11px] lg:gap-[30px]
+.double-card {
+  @apply flex flex-col  gap-6 sm:flex-row md:gap-[11px] lg:gap-[30px];
 }
-
-
