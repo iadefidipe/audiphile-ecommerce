@@ -8,12 +8,14 @@ interface ImageContainerInterface {
   desktopImage: StaticImageData
   tabletImage: StaticImageData
   mobileImage: StaticImageData
+  alt?: string
 }
 
 function ImageContainer({
   desktopImage,
   tabletImage,
   mobileImage,
+  alt,
 }: ImageContainerInterface) {
   const { size } = useWindow()
 
@@ -21,7 +23,7 @@ function ImageContainer({
     <div className='cta-image-wrap  flex-1 rounded-lg'>
       <Image
         src={handleImage(size, desktopImage, tabletImage, mobileImage)}
-        alt=''
+        alt={alt}
       />
     </div>
   )

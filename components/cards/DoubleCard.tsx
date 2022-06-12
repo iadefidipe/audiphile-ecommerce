@@ -15,6 +15,7 @@ function DoubleCard() {
             desktopImage={desktopImage}
             tabletImage={tabletImage}
             mobileImage={mobileImage}
+            alt=''
           />
           <div className=' smcard-btn '>
             <h4 className=' text-h4 font-bold leading-h4  '>YX1 EARPHONES</h4>

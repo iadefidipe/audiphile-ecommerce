@@ -8,9 +8,9 @@ function LargeCard() {
   return (
     <section className="my-10 mx-pad">
       <Wrapper>
-        <div className=" relative flex  bg-card-pattern-circle  bg-no-repeat  bg-[center_-14rem]  bg-pry lg:bg-desk-pattern py-[55px]  flex-col items-center gap-[32px] lg:flex-row lg:pl-[117.49px] lg:pr-[95px] lg:gap-[132px] lg:min-h-[560px] lg:overflow-hidden ">
+        <div className=" rounded-pry relative flex  bg-card-pattern-circle  bg-no-repeat  bg-[center_-14rem]  bg-pry lg:bg-desk-pattern py-[55px]  flex-col items-center gap-[32px] lg:flex-row lg:pl-[117.49px] lg:pr-[95px] lg:gap-[132px] lg:min-h-[560px] lg:overflow-hidden ">
           <div className="lg:relative flex-1 " >
-            <div className="lg:absolute lg:top-[-140px] ">
+            <div className="lg:absolute lg:top-[-140px] w-[100%] h-[100%] ">
               <ImageContainer
                 desktopImage={desktopImage}
                 tabletImage={tabletImage}
