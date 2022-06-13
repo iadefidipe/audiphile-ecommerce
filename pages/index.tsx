@@ -5,8 +5,10 @@ import type { NextPage } from "next"
 import Head from "next/head"
 import Image from "next/image"
 import { menuData } from "data/menuData"
+import { Category } from "components/home"
 
 const Home: NextPage = () => {
+  const {menu} = menuData
   return (
     <div>
       <Head>
@@ -15,7 +17,7 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      
+      <Category data={menu} />
       <LargeCard />
       <WideCard />
       <DoubleCard />
