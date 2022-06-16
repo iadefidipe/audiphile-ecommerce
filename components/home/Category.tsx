@@ -8,18 +8,20 @@ interface CategoryInterface {
 
 function Category({ data }: CategoryInterface) {
   return (
-    <Wrapper>
-      <div className=' flex flex-col gap-[100px] lg:gap-0 justify-between md:flex-row mt-40'>
-        {data.map((menu, index) => (
-          <MenuComponent
-            key={index}
-            title={menu.title}
-            link={menu.link}
-            image={menu.image}
-          />
-        ))}
-      </div>
-    </Wrapper>
+    <section className="mx-pad" >
+      <Wrapper  >
+        <div className=' flex flex-col gap-[100px] md:gap-[30px] justify-between md:flex-row mt-40  '>
+          {data.map((menu, index) => (
+            <MenuComponent
+              key={index}
+              title={menu.title}
+              link={menu.link}
+              image={menu.image}
+            />
+          ))}
+        </div>
+      </Wrapper>
+    </section>
   )
 }
 
