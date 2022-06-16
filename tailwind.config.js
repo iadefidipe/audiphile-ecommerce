@@ -69,9 +69,9 @@ module.exports = {
         "wide-card-lg": "url('/assets/home/desktop/image-speaker-zx7.jpg')",
         "card-pattern-circle":
           "url('/assets/home/desktop/pattern-circles.svg')",
-        "hero-desktop": "url('/assets/home/desktop/image-hero.jpg')",
-        "hero-tablet": "url('/assets/home/tablet/image-header.jpg')",
-        "hero-mobile": "url('/assets/home/mobile/image-header.jpg')",
+        "hero-desktop": "url('/assets/home/desktop/image-hero.png')",
+        "hero-tablet": "url('/assets/home/tablet/image-header.png')",
+        "hero-mobile": "url('/assets/home/mobile/image-header.png')",
       },
       backgroundPosition: {
         "desk-pattern": " -150px 170px",

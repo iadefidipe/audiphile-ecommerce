@@ -46,15 +46,10 @@
   .btn-shop {
     @apply text-black opacity-50 text-nav  font-bold  hover:text-pry;
   }
-
-  .smcard-btn {
-    @apply bg-gray flex-1 py-[42px] pl-[24px] flex flex-col items-start justify-center gap-8 rounded-pry md:py-[0] md:pl-[41px] lg:pl-[95px];
-  }
 }
-
 /* using tailwind @apply to apply the tailwind classes to the body */
 .nav {
-  @apply mx-pad relative flex items-center justify-between gap-7 after:content-[''] after:absolute after:left-0 after:right-0 after:bg-[#979797] after:h-px after:mt-[60px];
+  @apply mx-pad relative flex items-center justify-between gap-7 after:content-[''] after:absolute after:left-0 after:right-0 after:bg-[#979797] after:h-px after:mt-[95px];
 }
 
 /* menu links style in header */
