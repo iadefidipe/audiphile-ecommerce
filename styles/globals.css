@@ -6,7 +6,7 @@
 
 @layer base{
   h1{
-    @apply  text-h1 font-bold
+    @apply  text-h1-sm sm:text-h1 font-bold
   }
 
   h2{
@@ -24,6 +24,9 @@
   }
   h6{
     @apply  text-h6 font-bold
+  }
+  p{
+    @apply text-body leading-text
   }
 }
 
