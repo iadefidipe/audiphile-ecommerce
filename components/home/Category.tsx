@@ -9,7 +9,7 @@ interface CategoryInterface {
 function Category({ data }: CategoryInterface) {
   return (
     <Wrapper>
-      <div className=' flex flex-col  justify-between md:flex-row my-20'>
+      <div className=' flex flex-col gap-[100px] lg:gap-0 justify-between md:flex-row mt-40'>
         {data.map((menu, index) => (
           <MenuComponent
             key={index}
