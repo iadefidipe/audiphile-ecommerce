@@ -8,7 +8,7 @@ import Image from "next/image"
 
 function Footer() {
   return (
-    <footer className='bg-black '>
+    <footer className='bg-black px-pad  '>
       <Wrapper>
         <div className=' footer__container'>
           <Logo footer={true} />

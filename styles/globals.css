@@ -4,14 +4,63 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  /* typography */
+  h1 {
+    @apply text-h1-sm sm:text-h1 font-bold;
+  }
+
+  h2 {
+    @apply text-h2 font-bold;
+  }
+  h3 {
+    @apply text-h3 font-bold;
+  }
+  h4 {
+    @apply text-h4 font-bold;
+  }
+  h5 {
+    @apply text-h5 font-bold;
+  }
+  h6 {
+    @apply text-h6 font-bold;
+  }
+  p {
+    @apply text-body leading-text;
+  }
+}
+
+@layer components {
+  /* black button */
+  .btnOne {
+    @apply border-[1px] text-black text-nav border-black px-bx py-by font-bold hover:bg-black hover:text-white;
+  }
+  /* brown button */
+  .btnTwo {
+    @apply text-white bg-pry text-nav  px-bx py-by font-bold  hover:bg-accent;
+  }
+  /* black border button */
+  .btnThree {
+    @apply text-white bg-black text-nav  px-bx py-by font-bold  hover:bg-transparent border-black border-[1px] hover:text-black;
+  }
+
+  /* shop button */
+  .btn-shop {
+    @apply text-black opacity-50 text-nav  font-bold  hover:text-pry;
+  }
+
+  .smcard-btn {
+    @apply bg-gray flex-1 py-[42px] pl-[24px] flex flex-col items-start justify-center gap-8 rounded-pry md:py-[0] md:pl-[41px] lg:pl-[95px];
+  }
+}
 /* using tailwind @apply to apply the tailwind classes to the body */
 .nav {
-  @apply mx-pad relative flex items-center justify-between gap-7 after:content-[''] after:absolute after:left-0 after:right-0 after:bg-[#979797] after:h-px after:mt-[60px];
+  @apply mx-pad relative flex items-center justify-between gap-7 after:content-[''] after:absolute after:left-0 after:right-0 after:bg-[#979797] after:h-px after:mt-[95px];
 }
 
 /* menu links style in header */
 .footer-false {
-  @apply hidden md:flex flex-row text-white text-nav  gap-7 font-bold;
+  @apply hidden md:flex flex-row text-white focus:text-pry text-nav  gap-7 font-bold;
 }
 
 /* menu links style in footer */
@@ -28,10 +77,9 @@
   @apply text-black opacity-50 text-body leading-text text-center lg:text-left;
 }
 
-
 /* footer container div styling */
 .footer__container {
-  @apply mx-pad py-12 flex flex-col items-center gap-12 md:grid  grid-cols-2 gap-y-8  gap-x-0;
+  @apply  py-12 flex flex-col items-center gap-12 md:grid  grid-cols-2 gap-y-8  gap-x-0;
 }
 
 /* typography */
@@ -39,6 +87,16 @@
   @apply text-h2-sm text-center font-bold uppercase leading-h2 tracking-h2  sm:text-h2 lg:text-left;
 }
 
-.cta-image-wrap > span{
-    @apply rounded-[8px]
+.cta-image-wrap > span {
+  @apply rounded-pry;
+}
+
+/* shop button arrow img margin */
+.btn-shop > span {
+  @apply ml-[13.2px];
+}
+
+/* double card section */
+.double-card {
+  @apply flex flex-col  gap-6 sm:flex-row md:gap-[11px] lg:gap-[30px];
 }

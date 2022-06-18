@@ -26,6 +26,7 @@ module.exports = {
       },
       fontSize: {
         h1: "3.5rem",
+        "h1-sm": "2.25rem",
         h2: "2.5rem",
         "h2-sm": "1.75rem",
         h3: "2rem",
@@ -34,6 +35,7 @@ module.exports = {
         h6: "1.125rem",
         body: "0.9375rem",
         nav: "0.8125rem",
+        overline: "0.875rem",
       },
       fontWeight: {
         light: 300,
@@ -45,7 +47,9 @@ module.exports = {
         "5px": "5px",
       },
       spacing: {
-        pad: "39px",
+        pad: "24px",
+        by: "15px",
+        bx: `30px`,
       },
       lineHeight: {
         text: "25px",
@@ -53,6 +57,24 @@ module.exports = {
       },
       letterSpacing: {
         h2: "1.43px",
+        h4: "2px",
+        overline: "10px",
+      },
+      borderRadius: {
+        pry: "8px",
+      },
+      backgroundImage: {
+        "wide-card-sm": "url('/assets/home/mobile/image-speaker-zx7.jpg')",
+        "wide-card-md": "url('/assets/home/tablet/image-speaker-zx7.jpg')",
+        "wide-card-lg": "url('/assets/home/desktop/image-speaker-zx7.jpg')",
+        "card-pattern-circle":
+          "url('/assets/home/desktop/pattern-circles.svg')",
+        "hero-desktop": "url('/assets/home/desktop/image-hero.png')",
+        "hero-tablet": "url('/assets/home/tablet/image-header.png')",
+        "hero-mobile": "url('/assets/home/mobile/image-header.png')",
+      },
+      backgroundPosition: {
+        "desk-pattern": " -150px 170px",
       },
     },
   },
