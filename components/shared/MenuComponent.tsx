@@ -1,12 +1,13 @@
 import { Wrapper } from "components/shared"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import { BtnShop } from "./Button"
 import Link from "next/link"
+import { MenuInterface } from "utils/types"
 
-function menuComponent({ title, image, link }) {
+function menuComponent({ title, image, link }: MenuInterface) {
   return (
-    <div className=" flex-1">
-      <Wrapper >
+    <div className=' flex-1 first:hidden'>
+      <Wrapper>
         <div className='flex flex-col justify-end items-center bg-gray  rounded-pry '>
           <div className='category relative h-[150px] w-[230px] '>
             <div className=' absolute -translate-y-[70px]   '>
