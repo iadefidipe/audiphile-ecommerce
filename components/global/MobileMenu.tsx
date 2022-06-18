@@ -1,7 +1,12 @@
 import React from "react"
 import { MenuComponent, Wrapper } from "components/shared"
+import { MenuInterface } from "utils/types"
 
-function MobileMenu({ data }) {
+interface MobileMenuInterface{
+  data: MenuInterface[]
+}
+
+function MobileMenu({ data }:MobileMenuInterface) {
   return (
     <div className='absolute left-0 right-0 top-[95px] bottom-0 bg-[hsl(0, 0%, 50%)]   h-[1414px]  z-50 '>
       <Wrapper>
