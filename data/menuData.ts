@@ -13,12 +13,17 @@ export const menuData = {
     link: "/",
   },
   menu: [
-    
+    {
+      title: "home",
+      link: "/",
+      image: {
+        src: headphones,
+        alt: "headphone",
+      },
+    },
     {
       title: "headphones",
       link: "/headphones",
-      active: false,
-      cta: "shop",
       image: {
         src: headphones,
         alt: "headphone",
@@ -27,8 +32,6 @@ export const menuData = {
     {
       title: "speakers",
       link: "/speakers",
-      active: false,
-      cta: "shop",
       image: {
         src: speakers,
         alt: "speaker",
@@ -37,8 +40,6 @@ export const menuData = {
     {
       title: "earphones",
       link: "/earphones",
-      active: false,
-      cta: "shop",
       image: {
         src: earphones,
         alt: "earphones",
