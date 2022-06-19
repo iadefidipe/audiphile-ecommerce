@@ -55,13 +55,13 @@ export const getProductsBySlug = (
 }
 
 //TODO: Extract all slugs from the product object
-export const getSlugs = (products) => {
+export const getSlugs = (products: ProductType[]) => {
   return removeDuplicates(products.map((product) => product.slug))
 }
 
 //TODO: Function that converts a text to uppercase format
 export const convertToUpperCase = (word: string): string => {
-  return word.charAt(0).toUpperCase() + word.slice(1);
-};
+  return word.charAt(0).toUpperCase() + word.slice(1)
+}
 // Endpoint
 export const apiEndpoint = "https://audiophilus-api.herokuapp.com/products"
