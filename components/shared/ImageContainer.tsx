@@ -9,6 +9,7 @@ interface ImageContainerInterface {
   tabletImage: StaticImageData | string
   mobileImage: StaticImageData | string
   alt?: string
+  category?: boolean
 }
 
 function ImageContainer({
@@ -16,15 +17,25 @@ function ImageContainer({
   tabletImage,
   mobileImage,
   alt,
+  category,
 }: ImageContainerInterface) {
   const { size } = useWindow()
 
   return (
     <div className='cta-image-wrap  flex-1 rounded-lg'>
-      <Image
-        src={handleImage(size, desktopImage, tabletImage, mobileImage)}
-        alt={alt}
-      />
+      {!category ? (
+        <Image
+          src={handleImage(size, desktopImage, tabletImage, mobileImage)}
+          alt={alt}
+        />
+      ) : (
+        <Image
+          src={handleImage(size, desktopImage, tabletImage, mobileImage)}
+          alt={alt}
+          width={540}
+          height={560}
+        />
+      )}
     </div>
   )
 }
