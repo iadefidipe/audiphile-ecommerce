@@ -87,6 +87,14 @@
   @apply text-h2-sm text-center font-bold uppercase leading-h2 tracking-h2  sm:text-h2 lg:text-left;
 }
 
+/* overline text */
+.overline{
+  @apply uppercase text-white opacity-50 text-overline tracking-overline 
+}
+.overline-pry{
+  @apply uppercase text-pry  text-overline tracking-overline 
+}
+
 .cta-image-wrap > span {
   @apply rounded-pry;
 }
