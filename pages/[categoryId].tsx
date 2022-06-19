@@ -3,10 +3,10 @@ import { GetStaticProps, GetStaticPaths } from "next"
 import { ProductType } from "utils/types"
 import { apiEndpoint, getCategory, getProductsByCategory } from "utils/helper"
 import axios from "axios"
-import { Banner, Hero } from "components/global"
+import { Banner } from "components/global"
 import { menuData } from "data/menuData"
 import { Category } from "components/home"
-import { ProductIntro } from "components/categories"
+import { ProductIntro,Hero } from "components/categories"
 
 
 
