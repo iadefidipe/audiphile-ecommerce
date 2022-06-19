@@ -1,9 +1,6 @@
 import { DoubleCard, LargeCard, WideCard } from "components/cards"
-
-import { MenuComponent } from "components/shared"
 import type { NextPage } from "next"
 import Head from "next/head"
-import Image from "next/image"
 import { menuData } from "data/menuData"
 import { Category, Hero } from "components/home"
 import { Banner } from "components/global"
@@ -11,7 +8,7 @@ import { Banner } from "components/global"
 const Home: NextPage = () => {
   const {menu} = menuData
   return (
-    <div>
+    <>
       <Head>
         <title>Audiophile | Audio Gadgets Store</title>
         <meta
@@ -26,10 +23,8 @@ const Home: NextPage = () => {
       <WideCard />
       <DoubleCard />
       <Banner/>
-      </main>
-
-      
-    </div>
+      </main>    
+    </>
   )
 }
 

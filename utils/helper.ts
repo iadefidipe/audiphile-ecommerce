@@ -59,5 +59,9 @@ export const getSlugs = (products) => {
   return removeDuplicates(products.map((product) => product.slug))
 }
 
+//TODO: Function that converts a text to uppercase format
+export const convertToUpperCase = (word: string): string => {
+  return word.charAt(0).toUpperCase() + word.slice(1);
+};
 // Endpoint
 export const apiEndpoint = "https://audiophilus-api.herokuapp.com/products"
