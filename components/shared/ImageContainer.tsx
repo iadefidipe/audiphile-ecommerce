@@ -5,9 +5,9 @@ import { memo } from "react"
 import { handleImage } from "utils/helper"
 
 interface ImageContainerInterface {
-  desktopImage: StaticImageData
-  tabletImage: StaticImageData
-  mobileImage: StaticImageData
+  desktopImage: StaticImageData | string
+  tabletImage: StaticImageData | string
+  mobileImage: StaticImageData | string
   alt?: string
 }
 
