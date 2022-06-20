@@ -1,7 +1,12 @@
 import Head from "next/head"
 import { GetStaticProps, GetStaticPaths } from "next"
 import { ProductType } from "utils/types"
-import { apiEndpoint, getCategory, getProductsByCategory, convertToUpperCase } from "utils/helper"
+import {
+  apiEndpoint,
+  getCategory,
+  getProductsByCategory,
+  convertToUpperCase,
+} from "utils/helper"
 import axios from "axios"
 import { Banner } from "components/global"
 import { menuData } from "data/menuData"
@@ -17,13 +22,13 @@ function ProductCategory({ products, category }: ProductCategoryInterface) {
   const { menu } = menuData
 
   //TODO: Format "category" text
-  const customCategory = convertToUpperCase(category);
+  const Category = convertToUpperCase(category)
 
   return (
     <>
       <Head>
         <title>
-          {customCategory} | Shop for {customCategory}
+          {Category} | Shop for {Category}
         </title>
         <meta
           name='description'
@@ -31,7 +36,7 @@ function ProductCategory({ products, category }: ProductCategoryInterface) {
         />
         <meta
           property='og:title'
-          content={`${customCategory} | Shop for ${customCategory}`}
+          content={`${Category} | Shop for ${Category}`}
           key='ogtitle'
         />
         <meta

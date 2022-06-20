@@ -39,7 +39,7 @@ interface GalleryTypes {
   second: ImagesTypes;
   third: ImagesTypes;
 }
-interface OthersType {
+export interface OthersType {
   slug: string;
   name: string;
   image: ImagesTypes;
