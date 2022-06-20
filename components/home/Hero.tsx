@@ -9,7 +9,7 @@ function Hero() {
       <Wrapper>
         <div className=' px-pad pt-[126px] pb-[167px]  lg:flex  '>
           <div className='text-white flex-1  flex flex-col items-center text-center gap-[24px] lg:items-start lg:text-left '>
-            <p className='uppercase text-white opacity-50 text-overline tracking-overline '>
+            <p className='overline'>
               NEW PRODUCT
             </p>
             <h1 className='uppercase'>XX99 Mark II Headphones</h1>
