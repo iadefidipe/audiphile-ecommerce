@@ -10,6 +10,7 @@ interface ImageContainerInterface {
   mobileImage: StaticImageData | string
   alt?: string
   category?: boolean
+  product?: boolean
 }
 
 function ImageContainer({
@@ -18,6 +19,7 @@ function ImageContainer({
   mobileImage,
   alt,
   category,
+  product
 }: ImageContainerInterface) {
   const { size } = useWindow()
 
@@ -32,7 +34,7 @@ function ImageContainer({
         <Image
           src={handleImage(size, desktopImage, tabletImage, mobileImage)}
           alt={alt}
-          width={540}
+          width={ 640  }
           height={560}
         />
       )}
