@@ -9,7 +9,7 @@ function Hero() {
       <Wrapper>
         <div className=' px-pad pt-[126px] pb-[167px]  lg:flex  '>
           <div className='text-white flex-1  flex flex-col items-center text-center gap-[24px] lg:items-start lg:text-left '>
-            <p className='overline'>
+            <p className='overline-home'>
               NEW PRODUCT
             </p>
             <h1 className='uppercase'>XX99 Mark II Headphones</h1>
@@ -17,7 +17,7 @@ function Hero() {
               Experience natural, lifelike audio and exceptional build quality
               made for the passionate music enthusiast.
             </p>
-            <BtnPry className='btnTwo mt-[26px] ' />
+            <BtnPry className='btnTwo mt-[26px]' slug="xx99-mark-two-headphones" />
           </div>
           <div className=' hidden flex-1 lg:block '></div>
         </div>

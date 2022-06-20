@@ -27,7 +27,7 @@ function ProductIntro({ data }: ProductIntroInterface) {
             <p className=" overline-pry " >NEW PRODUCT</p>
             <h2 className="text-center lg:text-left uppercase" >{product.name}</h2>
             <p className="text-center text-black opacity-50 font-medium lg:text-left " >{product.description}</p>
-            <BtnPry className='btnTwo' />
+            <BtnPry className='btnTwo' slug={product.slug} />
           </div>
         </section>
       ))}

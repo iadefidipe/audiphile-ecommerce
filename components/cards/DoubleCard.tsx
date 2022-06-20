@@ -19,7 +19,7 @@ function DoubleCard() {
           />
           <div className=' smcard-btn '>
             <h4 className=' text-h4 font-bold leading-h4  '>YX1 EARPHONES</h4>
-            <BtnPry className="btnOne" />
+            <BtnPry className="btnOne" slug='yx1-earphones' />
 
           </div>
         </div>

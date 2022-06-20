@@ -54,10 +54,12 @@ module.exports = {
       lineHeight: {
         text: "25px",
         h2: "44px",
+        h5: "33px"
       },
       letterSpacing: {
         h2: "1.43px",
         h4: "2px",
+        h5: "1.71px",
         overline: "10px",
       },
       borderRadius: {

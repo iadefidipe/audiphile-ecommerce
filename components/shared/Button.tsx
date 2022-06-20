@@ -1,14 +1,18 @@
 import arrow from "public/assets/shared/desktop/icon-arrow-right.svg"
 import Image from "next/image"
-
+import Link from "next/link"
 
 interface BtnInterface {
-  className: string
+  className?: string
+  slug: string
 }
-export function BtnPry({className}: BtnInterface) {
-  return <button className={className}>SEE PRODUCT</button>
+export function BtnPry({ className, slug }: BtnInterface) {
+  return (
+    <Link href={`/products/${slug}`} passHref>
+      <button className={className}>SEE PRODUCT</button>
+    </Link>
+  )
 }
-
 
 export function BtnShop() {
   return (
