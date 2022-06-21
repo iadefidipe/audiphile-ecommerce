@@ -39,7 +39,7 @@ function ImageContainer({
           <Image
             src={handleImage(size, desktopImage, tabletImage, mobileImage)}
             alt={alt}
-            width={540}
+            width={ (size && size <=768 ) ? 768 : 540  }
             height={234}
           />
         </div>
@@ -50,7 +50,7 @@ function ImageContainer({
           <Image
             src={handleImage(size, desktopImage, tabletImage, mobileImage)}
             alt={alt}
-            width={635}
+            width={(size && size <=768 ) ? 768 : 635}
             height={592}
           />
         </div>
