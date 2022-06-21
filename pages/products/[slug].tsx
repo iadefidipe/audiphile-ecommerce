@@ -13,7 +13,7 @@ import { ProductType } from "utils/types"
 import { Banner } from "components/global"
 import { Category } from "components/home"
 import { menuData } from "data/menuData"
-import { Gallery, Others } from "components/products"
+import { Feature, Gallery, Others } from "components/products"
 
 
 
@@ -27,7 +27,7 @@ function Product({ product }: ProductInterface) {
 
 
   //TODO: Destructure the product object and extract required SEO values
-  const { id, name, description, category, others, includes, gallery } = product
+  const { id, name, description, category, others, includes, gallery, features } = product
 
   //TODO: Format specific texts needed for SEO display
   const ProductName = convertToUpperCase(name)
@@ -47,6 +47,7 @@ function Product({ product }: ProductInterface) {
         <meta property='og:description' content={description} key='ogdesc' />
       </Head>
       <main >
+        <Feature includes={includes} feature={features} />
         <Gallery data={gallery} />
         <Others data = {others } />
         <Category data={menu} />

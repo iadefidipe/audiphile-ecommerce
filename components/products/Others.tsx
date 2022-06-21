@@ -8,7 +8,7 @@ interface OthersInterface {
 }
 function Others({ data }: OthersInterface) {
   return (
-    <section className="mx-pad py-[100px]" >
+    <section className="mx-pad pb-[100px]" >
       <Wrapper>
         <h3 className="uppercase text-center mb-[64px] " >you may also like</h3>
         <div className="flex flex-col sm:flex-row gap-[56px]  ms:gap-[11px] lg:gap-[30px] " >
