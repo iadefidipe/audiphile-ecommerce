@@ -30,11 +30,11 @@ export interface ProductType {
   others: OthersType[];
 }
 
-interface IncludesTypes {
+export interface IncludesTypes {
   quantity: number;
   item: string;
 }
-interface GalleryTypes {
+export interface GalleryTypes {
   first: ImagesTypes;
   second: ImagesTypes;
   third: ImagesTypes;
