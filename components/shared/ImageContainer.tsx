@@ -9,8 +9,7 @@ interface ImageContainerInterface {
   tabletImage: StaticImageData | string
   mobileImage: StaticImageData | string
   alt?: string
-  category?: boolean
-  product?: boolean
+  control?: string
 }
 
 function ImageContainer({
@@ -18,28 +17,72 @@ function ImageContainer({
   tabletImage,
   mobileImage,
   alt,
-  category,
-  product
+  control,
 }: ImageContainerInterface) {
   const { size } = useWindow()
 
-  return (
-    <div className='cta-image-wrap  flex-1 rounded-lg'>
-      {!category ? (
-        <Image
-          src={handleImage(size, desktopImage, tabletImage, mobileImage)}
-          alt={alt}
-        />
-      ) : (
-        <Image
-          src={handleImage(size, desktopImage, tabletImage, mobileImage)}
-          alt={alt}
-          width={ 640  }
-          height={560}
-        />
-      )}
-    </div>
-  )
+  switch (control) {
+    case "category":
+      return (
+        <div className='cta-image-wrap  flex-1 rounded-lg'>
+          <Image
+            src={handleImage(size, desktopImage, tabletImage, mobileImage)}
+            alt={alt}
+            width={640}
+            height={560}
+          />
+        </div>
+      )
+    case "gallery":
+      return (
+        <div className='cta-image-wrap  flex-1 rounded-lg'>
+          <Image
+            src={handleImage(size, desktopImage, tabletImage, mobileImage)}
+            alt={alt}
+            width={540}
+            height={234}
+          />
+        </div>
+      )
+    case "gallery-large":
+      return (
+        <div className='cta-image-wrap  flex-1 rounded-lg'>
+          <Image
+            src={handleImage(size, desktopImage, tabletImage, mobileImage)}
+            alt={alt}
+            width={635}
+            height={592}
+          />
+        </div>
+      )
+    default:
+      return (
+        <div className='cta-image-wrap  flex-1 rounded-lg'>
+          <Image
+            src={handleImage(size, desktopImage, tabletImage, mobileImage)}
+            alt={alt}
+          />
+        </div>
+      )
+  }
+
+  // return (
+  //   <div className='cta-image-wrap  flex-1 rounded-lg'>
+  //     {!category ? (
+  //       <Image
+  //         src={handleImage(size, desktopImage, tabletImage, mobileImage)}
+  //         alt={alt}
+  //       />
+  //     ) : (
+  //       <Image
+  //         src={handleImage(size, desktopImage, tabletImage, mobileImage)}
+  //         alt={alt}
+  //         width={640}
+  //         height={560}
+  //       />
+  //     )}
+  //   </div>
+  // )
 }
 
 const MemoizedImage = memo(ImageContainer)

@@ -20,7 +20,7 @@ function ProductIntro({ data }: ProductIntroInterface) {
               desktopImage={product.image.desktop}
               tabletImage={product.image.tablet}
               mobileImage={product.image.mobile}
-              category
+              control="product"
             />
           </div>
           <div className='flex-1 flex flex-col items-center gap-[24px] lg:items-start'>

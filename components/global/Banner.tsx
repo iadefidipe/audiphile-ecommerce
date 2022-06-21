@@ -28,6 +28,7 @@ function Banner() {
             tabletImage={tabletImage}
             mobileImage={mobileImage}
             alt='a man listening to music with a headphone'
+            
           />
         </div>
       </Wrapper>

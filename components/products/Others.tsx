@@ -10,6 +10,7 @@ function Others({ data }: OthersInterface) {
   return (
     <section className="mx-pad py-[100px]" >
       <Wrapper>
+        <h3 className="uppercase text-center mb-[64px] " >you may also like</h3>
         <div className="flex flex-col sm:flex-row gap-[56px]  ms:gap-[11px] lg:gap-[30px] " >
           {data.map((item, index) => (
             <div key={index} className="flex flex-col items-center gap-[32px] " >
@@ -18,8 +19,7 @@ function Others({ data }: OthersInterface) {
                   desktopImage={item.image.desktop}
                   tabletImage={item.image.tablet}
                   mobileImage={item.image.mobile}
-                  category
-                  product
+                  control="category"
                 />
               </div>
               <h5>{item.name}</h5>
