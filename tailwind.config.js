@@ -30,6 +30,7 @@ module.exports = {
         h2: "2.5rem",
         "h2-sm": "1.75rem",
         h3: "2rem",
+        "h3-sm": "1.5rem",
         h4: "1.75rem",
         h5: "1.5rem",
         h6: "1.125rem",
@@ -54,10 +55,12 @@ module.exports = {
       lineHeight: {
         text: "25px",
         h2: "44px",
+        h3: "36px",
         h5: "33px"
       },
       letterSpacing: {
         h2: "1.43px",
+        h3: "1.14px",
         h4: "2px",
         h5: "1.71px",
         overline: "10px",
