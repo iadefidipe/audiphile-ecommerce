@@ -7,6 +7,8 @@ export interface MenuInterface {
     src: StaticImageData
     alt: string
   }
+  setToggle?:React.Dispatch<React.SetStateAction<boolean>>
+  
 }
 
 //TODO: Type => Product Data Types
@@ -44,7 +46,7 @@ export interface OthersType {
   name: string;
   image: ImagesTypes;
 }
-interface ImagesTypes {
+export interface ImagesTypes {
   mobile: string;
   tablet: string;
   desktop: string;

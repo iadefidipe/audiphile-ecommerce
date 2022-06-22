@@ -66,3 +66,5 @@ export const convertToUpperCase = (word: string): string => {
 }
 // Endpoint
 export const apiEndpoint = "https://audiophilus-api.herokuapp.com/products"
+
+export const currency_symbol = '$'

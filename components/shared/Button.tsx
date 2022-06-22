@@ -12,7 +12,15 @@ export function BtnPry({ className, slug }: BtnInterface) {
       <button className={className}>SEE PRODUCT</button>
     </Link>
   )
+}export function BtnAdd() {
+  return (
+    <Link href={`/products/`} passHref>
+      <button className='btnTwo uppercase'> Add PRODUCT</button>
+    </Link>
+  )
 }
+
+
 
 export function BtnShop() {
   return (
