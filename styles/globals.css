@@ -108,3 +108,8 @@
 .double-card {
   @apply flex flex-col  gap-6 sm:flex-row md:gap-[11px] lg:gap-[30px];
 }
+
+/* counter buttons */
+.counter-btn {
+  @apply font-bold text-[13px] opacity-25  w-[48px] h-[48px] grid place-content-center hover:text-pry hover:opacity-100 
+}

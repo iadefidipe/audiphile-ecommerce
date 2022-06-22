@@ -51,6 +51,7 @@ module.exports = {
         pad: "24px",
         by: "15px",
         bx: `30px`,
+        tb: "50px",
       },
       lineHeight: {
         text: "25px",
