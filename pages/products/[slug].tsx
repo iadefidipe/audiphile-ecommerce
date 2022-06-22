@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { Wrapper } from "components/shared"
+import { Navigator, Wrapper } from "components/shared"
 import React from "react"
 import { GetStaticProps, GetStaticPaths } from "next"
 import {
@@ -47,6 +47,7 @@ function Product({ product }: ProductInterface) {
         <meta property='og:description' content={description} key='ogdesc' />
       </Head>
       <main >
+        <Navigator />
         <Intro image={image} name={name} state={product.new} description={description} price={price}  />
         <Feature includes={includes} feature={features} />
         <Gallery data={gallery} />
