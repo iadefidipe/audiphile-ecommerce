@@ -4,9 +4,10 @@ import { MenuInterface } from "utils/types"
 
 interface MobileMenuInterface{
   data: MenuInterface[]
+  setToggle:React.Dispatch<React.SetStateAction<boolean>>
 }
 
-function MobileMenu({ data }:MobileMenuInterface) {
+function MobileMenu({ data,setToggle }:MobileMenuInterface) {
   return (
     <div className='absolute left-0 right-0 top-[95px] bottom-0 bg-[hsl(0, 0%, 50%)]   h-[1414px]  z-50 '>
       <Wrapper>
@@ -17,6 +18,7 @@ function MobileMenu({ data }:MobileMenuInterface) {
               title={menu.title}
               link={menu.link}
               image={menu.image}
+              setToggle={setToggle}
             />
           ))}
         </div>
