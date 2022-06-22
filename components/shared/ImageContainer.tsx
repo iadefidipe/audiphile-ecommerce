@@ -39,7 +39,7 @@ function ImageContainer({
           <Image
             src={handleImage(size, desktopImage, tabletImage, mobileImage)}
             alt={alt}
-            width={ (size && size <=768 ) ? 768 : 540  }
+            width={size && size <= 768 ? 768 : 540}
             height={234}
           />
         </div>
@@ -50,8 +50,31 @@ function ImageContainer({
           <Image
             src={handleImage(size, desktopImage, tabletImage, mobileImage)}
             alt={alt}
-            width={(size && size <=768 ) ? 768 : 635}
+            width={size && size <= 768 ? 768 : 635}
             height={592}
+          />
+        </div>
+      )
+    case "intro":
+      return (
+        <div className='cta-image-wrap  flex-1 rounded-lg'>
+          <Image
+            src={handleImage(size, desktopImage, tabletImage, mobileImage)}
+            alt={alt}
+            width={
+              size && size < 768
+                ? 768
+                : size && size >= 768 && size < 1024
+                ? 281
+                : 540
+            }
+            height={
+              size && size <= 768
+                ? 592
+                : size && size >= 768 && size < 1024
+                ? 480
+                : 560
+            }
           />
         </div>
       )
