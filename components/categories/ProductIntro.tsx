@@ -12,25 +12,29 @@ function ProductIntro({ data }: ProductIntroInterface) {
     <section>
       <Wrapper>
         {data.map((product, index) => (
-          <section
+          <div
             key={index}
-            className='mx-pad py-[120px] lg:py-[160px] flex flex-col items-center justify-center gap-[32px] lg:flex-row lg:odd:flex-row-reverse lg:gap-[125px] '
+            className='mx-pad py-[120px] lg:py-[100px] flex flex-col items-center justify-center gap-[32px] lg:flex-row lg:odd:flex-row-reverse lg:gap-[125px] '
           >
-            <div>
+            <div className="flex-1" >
               <ImageContainer
                 desktopImage={product.image.desktop}
                 tabletImage={product.image.tablet}
                 mobileImage={product.image.mobile}
-                control="category"
+                control='category'
               />
             </div>
             <div className='flex-1 flex flex-col items-center gap-[24px] lg:items-start'>
-              <p className=" overline-pry " >NEW PRODUCT</p>
-              <h2 className="text-center lg:text-left uppercase" >{product.name}</h2>
-              <p className="text-center text-black opacity-50 font-medium lg:text-left " >{product.description}</p>
+              <p className=' overline-pry '>NEW PRODUCT</p>
+              <h2 className='text-center lg:text-left uppercase'>
+                {product.name}
+              </h2>
+              <p className='text-center text-black opacity-50 font-medium lg:text-left '>
+                {product.description}
+              </p>
               <BtnPry className='btnTwo' slug={product.slug} />
             </div>
-          </section>
+          </div>
         ))}
       </Wrapper>
     </section>
