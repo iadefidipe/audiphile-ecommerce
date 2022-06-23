@@ -22,13 +22,13 @@ function ProductCategory({ products, category }: ProductCategoryInterface) {
   const { menu } = menuData
 
   //TODO: Format "category" text
-  const Category = convertToUpperCase(category)
+  const customCategory = convertToUpperCase(category)
 
   return (
     <>
       <Head>
         <title>
-          {Category} | Shop for {Category}
+          {customCategory} | Shop for {customCategory}
         </title>
         <meta
           name='description'
