@@ -51,7 +51,8 @@ export const getProductsBySlug = (
   slug: string | string[],
   products: ProductType[]
 ) => {
-  return products.filter((productItems) => productItems.slug === slug)
+  const [product] =  products.filter((productItems) => productItems.slug === slug)
+  return product
 }
 
 //TODO: Extract all slugs from the product object
@@ -65,3 +66,5 @@ export const convertToUpperCase = (word: string): string => {
 }
 // Endpoint
 export const apiEndpoint = "https://audiophilus-api.herokuapp.com/products"
+
+export const currency_symbol = '$'

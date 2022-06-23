@@ -20,7 +20,7 @@ function Header() {
           <MenuLinks  />
           <CartIcon />
         </nav>
-        { toggleMenu && <MobileMenu data={menuData.menu} />}
+        { toggleMenu && <MobileMenu data={menuData.menu} setToggle={setToggleMenu} />}
       </Wrapper>
     </header>
   )

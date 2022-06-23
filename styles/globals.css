@@ -14,13 +14,13 @@
     @apply text-h2-sm sm:text-h2 font-bold;
   }
   h3 {
-    @apply text-h3 font-bold;
+    @apply text-h3-sm sm:text-h3 font-bold leading-h3 tracking-h3;
   }
   h4 {
     @apply text-h4 font-bold;
   }
   h5 {
-    @apply text-h5 font-bold;
+    @apply text-h5 font-bold leading-h5 tracking-h5;
   }
   h6 {
     @apply text-h6 font-bold;
@@ -79,7 +79,7 @@
 
 /* footer container div styling */
 .footer__container {
-  @apply  py-12 flex flex-col items-center gap-12 md:grid  grid-cols-2 gap-y-8  gap-x-0;
+  @apply py-12 flex flex-col items-center gap-12 md:grid  grid-cols-2 gap-y-8  gap-x-0;
 }
 
 /* typography */
@@ -88,11 +88,11 @@
 }
 
 /* overline text */
-.overline{
-  @apply uppercase text-white opacity-50 text-overline tracking-overline 
+.overline-home {
+  @apply uppercase text-white opacity-50 text-overline tracking-overline;
 }
-.overline-pry{
-  @apply uppercase text-pry  text-overline tracking-overline 
+.overline-pry {
+  @apply uppercase text-pry  text-overline tracking-overline;
 }
 
 .cta-image-wrap > span {
@@ -107,4 +107,9 @@
 /* double card section */
 .double-card {
   @apply flex flex-col  gap-6 sm:flex-row md:gap-[11px] lg:gap-[30px];
+}
+
+/* counter buttons */
+.counter-btn {
+  @apply font-bold text-[13px] opacity-25  w-[48px] h-[48px] grid place-content-center hover:text-pry hover:opacity-100 
 }

@@ -4,10 +4,10 @@ import { BtnShop } from "./Button"
 import Link from "next/link"
 import { MenuInterface } from "utils/types"
 
-function menuComponent({ title, image, link }: MenuInterface) {
+function menuComponent({ title, image, link, setToggle }: MenuInterface) {
   return (
-    <Link href={link} passHref>
-      <div className=' flex-1 first:hidden'>
+    <Link href={link} passHref >
+      <div className=' flex-1 first:hidden' onClick={ () => setToggle && setToggle(false) }>
         <Wrapper>
           <div className='flex flex-col justify-end items-center bg-gray  rounded-pry '>
             <div className='category relative h-[150px] w-[230px] '>

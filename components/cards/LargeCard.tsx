@@ -25,7 +25,7 @@ function LargeCard() {
               Upgrade to premium speakers that are phenomenally built to deliver
               truly remarkable sound.
             </p>
-            <BtnPry className='btnThree mt-[26px]' />
+            <BtnPry className='btnThree mt-[26px]' slug='zx9-speaker' />
           </div>
         </div>
       </Wrapper>
